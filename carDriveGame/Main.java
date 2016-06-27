@@ -5,9 +5,10 @@ import org.newdawn.slick.BasicGame;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.SlickException;
+import org.newdawn.slick.state.BasicGameState;
+import org.newdawn.slick.state.StateBasedGame;
 
-
-public class Main extends BasicGame{
+public class Main extends StateBasedGame{
   public Main(){
     super("Car Game");
   }
@@ -21,13 +22,7 @@ public class Main extends BasicGame{
       e.printStackTrace();
     }
   }
-  public void init(GameContainer container) throws SlickException{
+  public void initStatesList(GameContainer container) throws SlickException {
+    this.addState(new GameState()); 
   }
-  
-  public void update(GameContainer container, int delta) throws SlickException{
 
-  }
-  public void render(GameContainer container, Graphics g) throws SlickException{
-    g.drawString("Test", 50, 50);
-  }
-}
