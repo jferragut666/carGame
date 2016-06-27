@@ -1,4 +1,4 @@
-package carGame;
+package carDriveGame;
 
 import org.newdawn.slick.AppGameContainer;
 import org.newdawn.slick.BasicGame;

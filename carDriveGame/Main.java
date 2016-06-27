@@ -1,4 +1,4 @@
-package carGame;
+package carDriveGame;
 
 import org.newdawn.slick.AppGameContainer;
 import org.newdawn.slick.BasicGame;
@@ -28,6 +28,6 @@ public class Main extends BasicGame{
 
   }
   public void render(GameContainer container, Graphics g) throws SlickException{
-
+    g.drawString("Test", 50, 50);
   }
 }
