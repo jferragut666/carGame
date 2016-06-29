@@ -9,7 +9,7 @@ import org.newdawn.slick.state.BasicGameState;
 import org.newdawn.slick.state.StateBasedGame;
 import org.newdawn.slick.Input;
 
-public class GameState extends BasicGameState{
+public class StartGame extends BasicGameState{
   public void init(GameContainer container, StateBasedGame sbg) throws SlickException{
   }
   
@@ -19,7 +19,7 @@ public class GameState extends BasicGameState{
     }
   }
   public void render(GameContainer container, StateBasedGame sbg, Graphics g) throws SlickException{
-    g.drawString("Test", 50, 50);
+    g.drawString("T3st", 50, 50);
   }
   public int getID(){
     return 0;
