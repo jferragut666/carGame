@@ -14,6 +14,7 @@ public class Enemy{
     this.enemySprite = enemySprite;
     this.name = name;
     this.scale = scale;
+    if(this.x > 91+173/2
   }
   public int getX(){
     return x;
@@ -35,7 +36,8 @@ public class Enemy{
   }
   public void move(){
     y+=5;
-    scale-=.008;
+    x-=2;
+    scale+=(float).005;
   }
 }
 

@@ -20,7 +20,7 @@ public class MainGame extends BasicGameState{
     container.setTargetFrameRate(60);
     backGround = new Image("carDriveGame/background.png"); 
     c = new Car((320-64),384, new Image("carDriveGame/car.png", false, Image.FILTER_NEAREST));  
-    e = new Enemy(320, 100, new Image("carDriveGame/enemy.png", false, Image.FILTER_NEAREST), "oil slick", 1); 
+    e = new Enemy((int)(Math.random()*91)+173, 0, new Image("carDriveGame/enemy.png", false, Image.FILTER_NEAREST), "oil slick", 1); 
   }
   
   public void update(GameContainer container, StateBasedGame sbg, int delta) throws SlickException{
@@ -43,9 +43,8 @@ public class MainGame extends BasicGameState{
   }
   public void render(GameContainer container, StateBasedGame sbg, Graphics g) throws SlickException{
     backGround.draw(0, 0);
-    
-    c.getImage().draw(c.getX(), c.getY(), scale);
     e.getImage().draw(e.getX(), e.getY(), e.getScale());
+    c.getImage().draw(c.getX(), c.getY(), scale);
   }
   public int getID(){
     return 1;
